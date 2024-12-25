@@ -1,0 +1,16 @@
+node_modules/
+android/
+ios/
+build/
+dist/
+out/
+*.log
+*.bundle.js
+**/*.test.js
+**/*.spec.js
+.vscode/
+.idea/
+metro-cache/
+babel-cache/
+*.tsbuildinfo
+.github/

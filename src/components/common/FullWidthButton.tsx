@@ -1,4 +1,3 @@
-import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import colors from '../../constants/colors';
 
@@ -14,49 +13,52 @@ const FullWidthButton = ({ text, onPress, disabled }: FullWidthButtonProps) => {
       <TouchableOpacity
         style={[styles.button, disabled ? styles.disabled : styles.enabled]}
         onPress={onPress}
-        disabled={disabled}
-      >
-        <Text style={[styles.text, disabled ? styles.textDisabled : styles.textEnabled]}>
+        disabled={disabled}>
+        <Text
+          style={[
+            styles.text,
+            disabled ? styles.textDisabled : styles.textEnabled,
+          ]}>
           {text}
         </Text>
       </TouchableOpacity>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-end',
     width: '100%',
-    padding: 40
+    padding: 40,
   },
   button: {
     width: '100%',
     height: 58,
     position: 'absolute',
-    bottom: 10, 
+    bottom: 10,
     alignSelf: 'center',
     paddingVertical: 10,
     borderRadius: 10,
   },
   enabled: {
-    backgroundColor: colors.mainButtonP.default
+    backgroundColor: colors.mainButtonP.default,
   },
   disabled: {
-    backgroundColor: colors.mainButtonP.disabled
+    backgroundColor: colors.mainButtonP.disabled,
   },
   text: {
     fontSize: 16,
     verticalAlign: 'middle',
-    margin: 'auto'
+    margin: 'auto',
   },
   textEnabled: {
-    color: colors.textP.default
+    color: colors.textP.default,
   },
   textDisabled: {
-    color: colors.textP.disabled
+    color: colors.textP.disabled,
   },
 });
 
-export default FullWidthButton
+export default FullWidthButton;
