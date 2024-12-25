@@ -1,10 +1,9 @@
 ---
-name: "✨FEATURE "
+name: '✨FEATURE '
 about: 작업할 내용을 입력해주세요
-title: "[✨FEATURE ]"
+title: '[✨FEATURE ]'
 labels: "✨ Feature, \U0001F680 FrontEnd"
 assignees: dmstjdhdh, yujinjeon12, sungminstar
-
 ---
 
 ## 구현해야하는 기능

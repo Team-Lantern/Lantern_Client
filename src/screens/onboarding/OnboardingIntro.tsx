@@ -1,9 +1,5 @@
-import React from 'react'
-
 const OnboardingIntro = () => {
-  return (
-    <></>
-  )
-}
+  return <></>;
+};
 
-export default OnboardingIntro
+export default OnboardingIntro;
